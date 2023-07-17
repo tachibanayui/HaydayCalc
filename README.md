@@ -34,7 +34,7 @@
   <p align="center">
     Hayday Calculator is a collection of tools. It allows you to explore the recipes involved in creating various items in the popular farm simulator game, Hayday.
     <br />
-    <a href="https://github.com/tachibanayui/HaydayCalc">View Demo</a>
+    <a href="https://haydaycalc.sharpi.co">View Demo</a>
     ·
     <a href="https://github.com/tachibanayui/HaydayCalc/issues">Report Bug</a>
     ·
@@ -71,9 +71,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
+![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/412b1ac9-bcc8-4174-b73a-d66025f2b246)
 Hayday Calculator was created with the following goals in mind:
 - Convenience: Say goodbye to manual calculations! Our tools save you time and effort by automating the planning process, allowing you to focus more on enjoying the game.
 - Accuracy: Our calculator provides accurate results based on the latest game data, ensuring precise calculations for strategic decision-making.
@@ -125,6 +123,10 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Screenshots
+![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/412b1ac9-bcc8-4174-b73a-d66025f2b246)
+![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/ffe95ca6-c1ab-47cb-a0e3-c1b780e3e40b)
 
 
 <!-- CONTRIBUTING -->

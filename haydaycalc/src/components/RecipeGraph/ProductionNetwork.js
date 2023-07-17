@@ -1,8 +1,7 @@
 import ProductionNetworkContainer from "./ProductionNetworkContainer"
 import ProductionNode from "./ProductionNode"
 import ProductionEdge from "./ProductionEdge"
-import SvgDraggable from "./SvgDraggable"
-import MathUtils from "../utils/math"
+import MathUtils from "../../utils/math"
 import { useEffect, useState } from "react"
 
 const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nodeSize = 25 }) => {

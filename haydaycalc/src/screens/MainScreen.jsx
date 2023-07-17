@@ -4,9 +4,9 @@ import DefaultLayout from "../layouts/DefaultLayout"
 
 import { AiFillGithub } from "react-icons/ai"
 import { BsFillJournalBookmarkFill } from "react-icons/bs"
-import RecipeGraphFeatureCard from "../components/RecipleGraphFeatureCard"
-import ProductionPlannerFeatureCard from "../components/ProductionPlannerFeatureCard"
-import UnknownFeatureCard from "../components/UnknownFeatureCard"
+import RecipeGraphFeatureCard from "../components/FeatureCard/RecipleGraphFeatureCard"
+import ProductionPlannerFeatureCard from "../components/FeatureCard/ProductionPlannerFeatureCard"
+import UnknownFeatureCard from "../components/FeatureCard/UnknownFeatureCard"
 
 const MainScreen = () => {
     return (

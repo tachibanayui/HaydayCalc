@@ -3,7 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout"
 import { calculatePosition, calculateDependencies, defaultRecipeSelector } from "../utils/data"
 import hdData from "../assets/output.json"
 import { useState } from "react"
-import ProductionNetwork from "../components/ProductionNetwork"
+import ProductionNetwork from "../components/RecipeGraph/ProductionNetwork"
 
 const RecipeGraphScreen = () => {
     const [selRecipe, setSelRecipe] = useState("Egg")

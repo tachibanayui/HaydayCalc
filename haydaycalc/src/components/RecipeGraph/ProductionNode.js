@@ -1,5 +1,3 @@
-import useCenterAlign from "../hooks/useCenterAlign"
-
 const ProductionNode = ({
     img,
     srcImg,

@@ -1,6 +1,6 @@
 import { useMemo } from "react"
-import MathUtils from "../utils/math"
-import SvgArrow from "./SvgArrow"
+import MathUtils from "../../utils/math"
+import SvgArrow from "../SvgArrow"
 
 const ProductionEdge = ({ sx, sy, dx, dy, count, ...rest }) => {
     const [mx, my] = useMemo(() => MathUtils.lerp(0.5, [sx, sy], [dx, dy]), [sx, sy, dx, dy])

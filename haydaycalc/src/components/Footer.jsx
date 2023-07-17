@@ -12,7 +12,7 @@ const Footer = () => {
                                 <use href="#bootstrap"></use>
                             </svg>
                         </a>
-                        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                        <span class="mb-3 mb-md-0 text-muted">Created by sharpi (Tachibana Yui)</span>
                     </div>
 
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -32,30 +32,20 @@ const Footer = () => {
                                 class="text-muted"
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://github.com/tachibanayui"
-                                title="github (tachibana-yui)"
+                                href="https://www.facebook.com/TachibanaYui.desu/"
+                                title="Facebook"
                             >
                                 <AiFillFacebook />
                             </a>
                         </li>
+
                         <li class="ms-3">
                             <a
                                 class="text-muted"
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://github.com/tachibanayui"
-                                title="github (tachibana-yui)"
-                            >
-                                <BsDiscord />
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a
-                                class="text-muted"
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://github.com/tachibanayui"
-                                title="github (tachibana-yui)"
+                                title="linkedin"
                             >
                                 <AiFillLinkedin />
                             </a>

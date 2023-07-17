@@ -22,7 +22,7 @@ const SvgArrow = ({ sx, sy, dx, dy, arrowSize = 5, ...rest }) => {
 
     const data = points.flatMap(x => x.join(",")).join(" ")
 
-    return <polygon {...rest} points={data} fill="white" stroke="white" />
+    return <polygon {...rest} points={data} fill="grey" stroke="grey" />
 }
 
 export default SvgArrow

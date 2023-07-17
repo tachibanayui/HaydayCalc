@@ -66,9 +66,11 @@ const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nod
         <ProductionNetworkContainer>
             {edgeProps.map((x, i) => <ProductionEdge key={i} {...x} />) }
             {nodeProps.map((x, i) => (
-                <SvgDraggable key={i} onDrag={e => handleDrag(i, e.translate)}>
+                // <SvgDraggable key={i} onDrag={e => handleDrag(i, e.translate)}>
+                <svg>
                     <ProductionNode {...x} />
-                </SvgDraggable>
+                </svg>
+                // </SvgDraggable>
             ))}
         </ProductionNetworkContainer>
     )

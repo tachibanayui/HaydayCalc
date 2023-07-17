@@ -11,24 +11,24 @@ import {
 } from "react-svg-pan-zoom"
 
 const ProductionNetworkContainer = ({ children }) => {
+    const Viewer = useRef(null);
     const [value, setValue] = useState(INITIAL_VALUE)
 
     return (
         <ReactSVGPanZoom
+            ref={Viewer}
             SVGBackground="transparent"
             background="transparent"
             preventPanOutside="true"
-            width={1500}
-            height={1000}
+            height="100vh"
+            width="100%"
             value={value}
             onChangeValue={setValue}
-            tool={TOOL_NONE}
+            tool={TOOL_PAN}
             miniatureProps={{ position: "none" }}
-            toolbarProps={{ position: "right" }}
+            toolbarProps={{ position: "none" }}
         >
-            <StyledSvg>
-                {children}
-            </StyledSvg>
+            <StyledSvg>{children}</StyledSvg>
         </ReactSVGPanZoom>
     )
 }

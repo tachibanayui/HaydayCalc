@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap"
-import Header from "../components/Header"
 import DefaultLayout from "../layouts/DefaultLayout"
 
 import { AiFillGithub } from "react-icons/ai"

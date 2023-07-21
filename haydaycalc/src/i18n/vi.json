@@ -30,5 +30,15 @@
             "description": "Chúng tôi liên tục làm việc trên các tính năng mới để cải thiện trải nghiệm của bạn. Kiểm tra lại sớm để cập nhật thú vị hơn!",
             "star-github": "Thêm sao trên Github"
         }
+    },
+    "recipe-graph": {
+        "page-title": "Đồ thị công thức cho Hayday",
+        "graph-view-title": "Trình xem biểu đồ",
+        "form-title": "Công thức",
+        "input-recipe": "Công thức",
+        "input-quantity": "Số lượng",
+        "vmsg-recipe": "Công thức không hợp lệ",
+        "vmsg-quantity": "Số lượng không hợp lệ",
+        "btn-generate": "Tạo đồ thị!"
     }
 }

@@ -1,0 +1,44 @@
+{
+    "header": {
+        "links": {
+            "home": "ホーム",
+            "recipe-graph": "レシピグラフ",
+            "production-planner": "生産計画",
+            "about-us": "私たちについて"
+        }
+    },
+    "footer": {
+        "created-by": "作成者"
+    },
+    "homepage": {
+        "hero-text": "Hayday Production Chain Graph ウェブサイトへようこそ！このツールを使うと、人気のファームシミュレーターゲーム「Hayday」でさまざまなアイテムを作るための複雑な生産チェーンを探索できます。経験豊富なプレーヤーでも初心者でも、このグラフを使って基本的な材料が最終製品にどのように変わるのかを理解できるでしょう。",
+        "hero-action-wiki": "Hayday ウィキ",
+        "hero-action-source-code": "ソースコード"
+    },
+    "feature-cards": {
+        "try-button": "試してみる！",
+        "production-planner": {
+            "title": "生産計画",
+            "description": "生産計画は、製造プロセスを効率化し、収益を最大化し、ゲームに費やす時間を最小限に抑えるための貴重な機能です。このツールを使用して、効率的な生産を行いましょう。"
+        },
+        "recipe-graph": {
+            "title": "レシピグラフ",
+            "description": "レシピグラフは複雑なレシピを簡単に理解し、ナビゲートするのに役立つ強力なツールです。このグラフの可視化機能を使って、さまざまなレシピの作成手順を簡単に把握できます。"
+        },
+        "comming-soon": {
+            "title": "新しいツールが近日公開予定！",
+            "description": "私たちは常に新しい機能を開発し、より良い体験を提供できるよう努めています。今後のエキサイティングなアップデートをお楽しみに！",
+            "star-github": "GitHub でスターをつける"
+        }
+    },
+    "recipe-graph": {
+        "page-title": "Hayday レシピグラフ",
+        "graph-view-title": "グラフ表示",
+        "form-title": "レシピ",
+        "input-recipe": "レシピ",
+        "input-quantity": "数量",
+        "vmsg-recipe": "無効なレシピ",
+        "vmsg-quantity": "無効な数量",
+        "btn-generate": "グラフを生成する！"
+    }
+}

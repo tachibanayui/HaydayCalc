@@ -1,21 +1,29 @@
-import { Button, Card } from "react-bootstrap"
-import { Link } from "react-router-dom"
-
+import { Button, Card } from "react-bootstrap";
+import LocaleLink from "../LocaleLink";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 const RecipeGraphFeatureCard = () => {
+    const t = useTranslations("feature-cards.recipe-graph");
+    const tt = useTranslations("feature-cards");
     return (
         <Card className="feature-card">
-            <Card.Img variant="top" src="/feature-graph-view.png" className="img-sized" style={{objectFit: 'cover'}}/>
+            <Image
+                className="card-img-top img-sized"
+                src="/feature-graph-view.png"
+                style={{ objectFit: "cover" }}
+                alt="Feature image card"
+                width={300}
+                height={300}
+            />
             <Card.Body>
-                <Card.Title>Recipe Graph</Card.Title>
-                <Card.Text>
-                    The Recipe Graph is a powerful tool that helps you navigate and understand
-                    complex recipes with ease. This graph visualization
-                    will guide you through the step-by-step process of creating various recipes.
-                </Card.Text>
-                <Link to="/recipe-graph" className="btn btn-primary">Try it out</Link>
+                <Card.Title>{t("title")}</Card.Title>
+                <Card.Text>{t("description")}</Card.Text>
+                <LocaleLink href="/recipe-graph" className="btn btn-primary">
+                    {tt("try-button")}
+                </LocaleLink>
             </Card.Body>
         </Card>
-    )
-}
+    );
+};
 
-export default RecipeGraphFeatureCard
+export default RecipeGraphFeatureCard;

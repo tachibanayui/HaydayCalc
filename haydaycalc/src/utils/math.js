@@ -76,6 +76,4 @@ MathUtils.angle = (v0, v1) => {
     return Math.acos(dot / dist)
 }
 
-window.MathUtils = MathUtils
-
 export default MathUtils

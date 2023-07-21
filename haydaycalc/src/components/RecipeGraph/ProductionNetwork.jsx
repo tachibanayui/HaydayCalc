@@ -2,7 +2,7 @@ import ProductionNetworkContainer from "./ProductionNetworkContainer"
 import ProductionNode from "./ProductionNode"
 import ProductionEdge from "./ProductionEdge"
 import MathUtils from "../../utils/math"
-import { useEffect, useState } from "react"
+import { useMemo, useState } from "react"
 
 const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nodeSize = 25 }) => {
     const [edgeProps, setEdgeProps] = useState([])
@@ -10,7 +10,7 @@ const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nod
     const [nodeTransforms, setNodeTransforms] = useState([])
 
 
-    useEffect(() => {
+    useMemo(() => {
         const width = Math.abs(Math.min(...Object.values(nodePoses).map(x => x.x))) + nodeSize
         const height = Math.abs(Math.min(...Object.values(nodePoses).map(x => x.y))) + nodeSize
         const intialEdgeProps = []
@@ -65,11 +65,9 @@ const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nod
         <ProductionNetworkContainer>
             {edgeProps.map((x, i) => <ProductionEdge key={i} {...x} />) }
             {nodeProps.map((x, i) => (
-                // <SvgDraggable key={i} onDrag={e => handleDrag(i, e.translate)}>
-                <svg>
+                <svg key={i}>
                     <ProductionNode {...x} />
                 </svg>
-                // </SvgDraggable>
             ))}
         </ProductionNetworkContainer>
     )

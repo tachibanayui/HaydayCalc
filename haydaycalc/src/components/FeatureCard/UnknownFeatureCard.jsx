@@ -1,22 +1,24 @@
-import { Button, Card } from "react-bootstrap"
-import { Link } from "react-router-dom"
-import { AiFillGithub } from "react-icons/ai"
+import Image from "next/image";
+import { Button, Card } from "react-bootstrap";
+import { AiFillGithub } from "react-icons/ai";
+import { useTranslations } from "next-intl";
 
 const UnknownFeatureCard = () => {
+    const t = useTranslations("feature-cards.comming-soon");
+
     return (
         <Card className="feature-card">
-            <Card.Img
-                variant="top"
+            <Image
+                className="card-img-top img-sized"
                 src="/question-mark.png"
-                className="img-sized"
                 style={{ objectFit: "cover" }}
+                alt="Feature image card"
+                width={300}
+                height={300}
             />
             <Card.Body>
-                <Card.Title>New tools coming soon!</Card.Title>
-                <Card.Text>
-                    Star my repository to show your appreciation and stay up to date with the latest
-                    tools and features.
-                </Card.Text>
+                <Card.Title>{t("title")}</Card.Title>
+                <Card.Text>{t("description")}</Card.Text>
                 <a
                     href="https://github.com/tachibanayui/HaydayCalc"
                     target="_blank"
@@ -24,11 +26,11 @@ const UnknownFeatureCard = () => {
                     className="btn btn-primary icon-align"
                 >
                     <AiFillGithub />
-                    Star on GitHub
+                    {t("star-github")}
                 </a>
             </Card.Body>
         </Card>
-    )
-}
+    );
+};
 
-export default UnknownFeatureCard
+export default UnknownFeatureCard;

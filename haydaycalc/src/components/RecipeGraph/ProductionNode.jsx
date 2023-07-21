@@ -34,6 +34,7 @@ const ProductionNode = ({
                 y={startY + size + captionSize + 2}
                 x={x}
                 textAnchor="middle"
+                fill="white"
             >
                 {count}x
             </text>

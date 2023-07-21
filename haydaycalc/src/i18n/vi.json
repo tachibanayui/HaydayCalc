@@ -1,0 +1,34 @@
+{
+    "header": {
+        "links": {
+            "home": "Trang Chủ",
+            "recipe-graph": "Đồ thị công thức",
+            "production-planner": "Lập kế hoạch sản xuất",
+            "about-us": "Về chúng tôi"
+        }
+    },
+    "footer": {
+        "created-by": "Được tạo bởi"
+    },
+    "homepage": {
+        "hero-text": "Chào mừng bạn đến với trang web Hayday Production Chain Graph! Công cụ này cho phép bạn khám phá chuỗi sản xuất phức tạp liên quan đến việc tạo ra các vật phẩm khác nhau trong trò chơi giả lập trang trại nổi tiếng, Hayday. Cho dù bạn là người chơi dày dạn kinh nghiệm hay mới bắt đầu, biểu đồ này sẽ giúp bạn hiểu quy trình từng bước biến các nguyên liệu cơ bản thành sản phẩm cuối cùng.",
+        "hero-action-wiki": "Hayday Wiki",
+        "hero-action-source-code": "Mã nguồn"
+    },
+    "feature-cards": {
+        "try-button": "Thử ngay!",
+        "production-planner": {
+            "title": "Lập kế hoạch sản xuất",
+            "description": "Công cụ lập kế hoạch sản xuất là một tính năng có giá trị được thiết kế để hợp lý hóa quy trình sản xuất của bạn và tối ưu hóa hiệu quả. Sử dụng công cụ này để tối đa hóa lợi nhuận của bạn và giảm thiểu thời gian dành cho trò chơi."
+        },
+        "recipe-graph": {
+            "title": "Đồ thị công thức",
+            "description": "Biểu đồ công thức là một công cụ mạnh mẽ giúp bạn điều hướng và hiểu các công thức nấu ăn phức tạp một cách dễ dàng. Hình ảnh đồ thị này sẽ hướng dẫn bạn qua quy trình từng bước tạo các công thức nấu ăn khác nhau."
+        },
+        "comming-soon": {
+            "title": "Công cụ mới sẽ sớm ra mắt!",
+            "description": "Chúng tôi liên tục làm việc trên các tính năng mới để cải thiện trải nghiệm của bạn. Kiểm tra lại sớm để cập nhật thú vị hơn!",
+            "star-github": "Thêm sao trên Github"
+        }
+    }
+}

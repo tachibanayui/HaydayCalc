@@ -14,6 +14,7 @@ const ProductionEdge = ({ sx, sy, dx, dy, count, ...rest }) => {
             <text
                 textAnchor="middle"
                 style={{ transform: `translate(${mx}px, ${my}px) rotate(${rot}rad)` }}
+                fill="white"
             >
                 {count}x
             </text>

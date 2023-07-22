@@ -1,5 +1,5 @@
+"use client"
 import { useCallback, useEffect, useRef, useState } from "react"
-import styled from "styled-components"
 import {
     INITIAL_VALUE,
     ReactSVGPanZoom,
@@ -14,6 +14,18 @@ const ProductionNetworkContainer = ({ children }) => {
     const Viewer = useRef(null);
     const [value, setValue] = useState(INITIAL_VALUE)
 
+    const [firstRender, setFirstRender] = useState(true)
+    useEffect(() => {
+        setFirstRender(false)
+    }, [])
+
+    if (firstRender) {
+        return (
+            <svg className="recipe-graph-view" height="100vh" width="100%">
+                {children}
+            </svg>
+        );
+    }
     return (
         <ReactSVGPanZoom
             ref={Viewer}
@@ -28,16 +40,9 @@ const ProductionNetworkContainer = ({ children }) => {
             miniatureProps={{ position: "none" }}
             toolbarProps={{ position: "none" }}
         >
-            <StyledSvg>{children}</StyledSvg>
+            <svg className="recipe-graph-view">{children}</svg>
         </ReactSVGPanZoom>
-    )
+    );
 }
-
-const StyledSvg = styled.svg`
-    width: 100%;
-    height: 500px;
-
-    border: 1px solid gold;
-`
 
 export default ProductionNetworkContainer

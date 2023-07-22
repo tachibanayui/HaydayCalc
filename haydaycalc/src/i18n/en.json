@@ -1,0 +1,55 @@
+{
+    "meta": {
+        "homepage": {
+            "title": "Home",
+            "description": "A collection of tools to help you understand the intricate production chain involved in creating various items in the popular farm simulator game, Hayday."
+        },
+        "recipe-graph": {
+            "title": "Recipe Graph",
+            "description": "Here a graph to help you visualize how the recipe is done."
+        }
+    },
+    "header": {
+        "links": {
+            "home": "Home",
+            "recipe-graph": "Recipe Graph",
+            "production-planner": "Production Planner",
+            "about-us": "About Us"
+        }
+    },
+    "footer": {
+        "created-by": "Created by"
+    },
+    "homepage": {
+        "hero-text": "Welcome to the Hayday Production Chain Graph website! This tool allows you to explore the intricate production chain involved in creating various items in the popular farm simulator game, Hayday. Whether you're a seasoned player or just starting out, this graph will help you understand the step-by-step process of turning basic ingredients into the final products.",
+        "hero-action-wiki": "Hayday Wiki",
+        "hero-action-source-code": "Source Code",
+        "explore-tool": "Explore Tools"
+    },
+    "feature-cards": {
+        "try-button": "Try it out!",
+        "production-planner": {
+            "title": "Production Planner",
+            "description": "The Production Planner is a valuable feature designed to streamline your production process and optimize efficiency. Use this tool to maximize your profits and minimize your time spent on the game."
+        },
+        "recipe-graph": {
+            "title": "Recipe Graph",
+            "description": "The Recipe Graph is a powerful tool that helps you navigate and understand complex recipes with ease. This graph visualization will guide you through the step-by-step process of creating various recipes."
+        },
+        "comming-soon": {
+            "title": "New tools coming soon!",
+            "description": "We are constantly working on new features to improve your experience. Check back soon for more exciting updates!",
+            "star-github": "Star on Github"
+        }
+    },
+    "recipe-graph": {
+        "page-title": "Hayday Recipe Graph",
+        "graph-view-title": "Graph View",
+        "form-title": "Recipes",
+        "input-recipe": "Recipes",
+        "input-quantity": "Quantity",
+        "vmsg-recipe": "Invalid recipe",
+        "vmsg-quantity": "Invalid quantity",
+        "btn-generate": "Generate Graph!"
+    }
+}

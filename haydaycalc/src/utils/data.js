@@ -79,7 +79,6 @@ export const calculateDependencies = (
     const { result, remainder } = calculateDependencies0(origins, goodsList, recipeSelector)
     const postCalc = remainder.filter(onlyUnique)
 
-    console.log("asd")
     for (const item of postCalc) {
         const itemCount = result[item].count
         const resultCount = recipeSelector(goodsList[item]).resultCount

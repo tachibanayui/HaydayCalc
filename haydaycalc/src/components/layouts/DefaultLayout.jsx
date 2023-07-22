@@ -1,6 +1,7 @@
-import FluidContainer from "react-bootstrap"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+"use client";
+
+import Header from "../Header";
+import Footer from "../Footer";
 
 const DefaultLayout = ({ children }) => {
     return (
@@ -9,7 +10,7 @@ const DefaultLayout = ({ children }) => {
             {children}
             <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default DefaultLayout
+export default DefaultLayout;

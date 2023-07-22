@@ -12,6 +12,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
     /** @type {import('next').Metadata}*/
     let meta = {
+        metadataBase: new URL(process.env.METADATA_BASE_URL ?? "https://haydaycalc.sharpi.co"),
         title: {
             default: t("meta.homepage.title"),
             template: "%s | Hayday Calculator",

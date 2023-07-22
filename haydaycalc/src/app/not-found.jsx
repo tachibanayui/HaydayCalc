@@ -4,6 +4,7 @@ import NextJsDefaultLayout from "@/components/layouts/NextJsDefaultLayout";
 import { Container } from "@/reexports/ReactBootstrap";
 import { getLocaleWithFallback } from "@/utils/locale";
 import { NextIntlClientProvider } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 const NotFound = async () => {
@@ -27,29 +28,27 @@ const NotFound = async () => {
                                     <h2>Not found</h2>
 
                                     <p>
-                                        We have searched far and wide but
-                                        couldn&apos;t find the page you
-                                        requested!
+                                        We have searched far and wide but couldn&apos;t find the
+                                        page you requested!
                                     </p>
-                                    <Link
-                                        href="/en"
-                                        className="btn btn-primary"
-                                    >
+                                    <Link href="/en" className="btn btn-primary">
                                         Return home!
                                     </Link>
                                 </div>
                             </div>
-                            <img
+                            <Image
                                 src="/Chicken_Walking.webp"
                                 alt="Not found message"
                                 className="w-50 d-block mx-auto"
+                                width={645}
+                                height={645}
                             />
                         </Container>
                     </DefaultLayout>
                 </body>
             </NextIntlClientProvider>
         </html>
-    );
+    )
 };
 
 export default NotFound;

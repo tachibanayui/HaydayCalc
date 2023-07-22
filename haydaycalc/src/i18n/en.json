@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "homepage": {
+            "title": "Home",
+            "description": "A collection of tools to help you understand the intricate production chain involved in creating various items in the popular farm simulator game, Hayday."
+        },
+        "recipe-graph": {
+            "title": "Recipe Graph",
+            "description": "Here a graph to help you visualize how the recipe is done."
+        }
+    },
     "header": {
         "links": {
             "home": "Home",
@@ -13,7 +23,8 @@
     "homepage": {
         "hero-text": "Welcome to the Hayday Production Chain Graph website! This tool allows you to explore the intricate production chain involved in creating various items in the popular farm simulator game, Hayday. Whether you're a seasoned player or just starting out, this graph will help you understand the step-by-step process of turning basic ingredients into the final products.",
         "hero-action-wiki": "Hayday Wiki",
-        "hero-action-source-code": "Source Code"
+        "hero-action-source-code": "Source Code",
+        "explore-tool": "Explore Tools"
     },
     "feature-cards": {
         "try-button": "Try it out!",

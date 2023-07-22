@@ -11,11 +11,11 @@ import ProductionNetwork from "@/components/RecipeGraph/ProductionNetwork";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-export const generateStaticParams = async () => {
-    return Object.keys(hdData).map(x => ({
-        recipe: x,
-    }))
-}
+// export const generateStaticParams = async () => {
+//     return Object.keys(hdData).map(x => ({
+//         recipe: x,
+//     }))
+// }
 
 const RecipeGraphScreen = ({ params }) => {
     const router = useRouter();
@@ -40,7 +40,7 @@ const RecipeGraphScreen = ({ params }) => {
             },
         ],
         hdData
-    );
+    )
 
     const handleGenerate = () => {
         if (!(selRecipe in hdData)) {

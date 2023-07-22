@@ -2,15 +2,15 @@ import ProductionNetworkContainer from "./ProductionNetworkContainer"
 import ProductionNode from "./ProductionNode"
 import ProductionEdge from "./ProductionEdge"
 import MathUtils from "../../utils/math"
-import { useMemo, useState } from "react"
+// import { useMemo } from "react"
 
 const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nodeSize = 25 }) => {
-    const [edgeProps, setEdgeProps] = useState([])
-    const [nodeProps, setNodeProps] = useState([])
-    const [nodeTransforms, setNodeTransforms] = useState([])
+    // const [edgeProps, setEdgeProps] = useState([])
+    // const [nodeProps, setNodeProps] = useState([])
+    const nodeTransforms = [];
 
 
-    useMemo(() => {
+    const calc = () => {
         const width = Math.abs(Math.min(...Object.values(nodePoses).map(x => x.x))) + nodeSize
         const height = Math.abs(Math.min(...Object.values(nodePoses).map(x => x.y))) + nodeSize
         const intialEdgeProps = []
@@ -28,7 +28,7 @@ const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nod
 
             const { ingridients, resultCount } = recipeSelector(current)
             for (const { product, count: childCount } of ingridients.filter(f => f.product !== x)) {
-                const childTransform = nodeTransforms[keys.indexOf(product)];
+                const childTransform = nodeTransforms[keys.indexOf(product)]
                 const childX = width + nodePoses[product].x + (childTransform?.[0] ?? 0)
                 const childY = height + nodePoses[product].y + (childTransform?.[1] ?? 0)
                 const translatedPropX = prop.x + (nodeTransforms[i]?.[0] ?? 0)
@@ -50,24 +50,22 @@ const ProductionNetwork = ({ goodsList, nodePoses, nodeData, recipeSelector, nod
             return prop
         })
 
-        setEdgeProps(intialEdgeProps)
-        setNodeProps(initialNodeProps)
-    }, [goodsList, nodePoses, nodeData, recipeSelector, nodeSize, nodeTransforms])
+        return [intialEdgeProps, initialNodeProps]
+    };
+    const [edgeProps, nodeProps] = calc();
+    // const [edgeProps, nodeProps] = useMemo(
+    //, [goodsList, nodePoses, nodeData, recipeSelector, nodeSize, nodeTransforms])
 
-
-
-    const handleDrag = (index, translate) => {
-        nodeTransforms[index] = translate
-        setNodeTransforms([...nodeTransforms])
-    }
 
     return (
         <ProductionNetworkContainer>
-            {edgeProps.map((x, i) => <ProductionEdge key={i} {...x} />) }
+            {edgeProps.map((x, i) => (
+                <ProductionEdge key={i} {...x} />
+            ))}
             {nodeProps.map((x, i) => (
-                <svg key={i}>
+                <g key={i}>
                     <ProductionNode {...x} />
-                </svg>
+                </g>
             ))}
         </ProductionNetworkContainer>
     )

@@ -5,7 +5,7 @@ const eqTriTan = Math.tan(MathUtils.radian(30))
 
 const SvgArrow = ({ sx, sy, dx, dy, arrowSize = 5, ...rest }) => {
     // Vector calc
-    const points = useMemo(() => {
+    const points = (() => {
         const src = [sx, sy]
         const dest = [dx, dy]
 
@@ -18,7 +18,7 @@ const SvgArrow = ({ sx, sy, dx, dy, arrowSize = 5, ...rest }) => {
         const p1 = MathUtils.vecAdd(midPoint, MathUtils.vecScalarMult(-halfWidth, dirVec))
 
         return [src, midPoint, p0, dest, p1, midPoint]
-    }, [sx, sy, dx, dy, arrowSize])
+    })();
 
     const data = points.flatMap(x => x.join(",")).join(" ")
 

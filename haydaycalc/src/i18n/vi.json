@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "homepage": {
+            "title": "Trang Chủ",
+            "description": "Một bộ sưu tập các công cụ giúp bạn hiểu về chuỗi sản xuất phức tạp liên quan đến việc tạo ra các vật phẩm khác nhau trong trò chơi giả lập trang trại nổi tiếng, Hayday."
+        },
+        "recipe-graph": {
+            "title": "Đồ thị công thức",
+            "description": "Đây là một biểu đồ để giúp bạn hình dung công thức được thực hiện như thế nào."
+        }
+    },
     "header": {
         "links": {
             "home": "Trang Chủ",
@@ -13,7 +23,8 @@
     "homepage": {
         "hero-text": "Chào mừng bạn đến với trang web Hayday Production Chain Graph! Công cụ này cho phép bạn khám phá chuỗi sản xuất phức tạp liên quan đến việc tạo ra các vật phẩm khác nhau trong trò chơi giả lập trang trại nổi tiếng, Hayday. Cho dù bạn là người chơi dày dạn kinh nghiệm hay mới bắt đầu, biểu đồ này sẽ giúp bạn hiểu quy trình từng bước biến các nguyên liệu cơ bản thành sản phẩm cuối cùng.",
         "hero-action-wiki": "Hayday Wiki",
-        "hero-action-source-code": "Mã nguồn"
+        "hero-action-source-code": "Mã nguồn",
+        "explore-tool": "Khám phá công cụ"
     },
     "feature-cards": {
         "try-button": "Thử ngay!",

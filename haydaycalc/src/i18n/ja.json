@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "homepage": {
+            "title": "ホーム",
+            "description": "人気のファームシミュレーションゲーム、Haydayでさまざまなアイテムを作成する際に関与する複雑な製造チェーンを理解するのに役立つツールのコレクションです。"
+        },
+        "recipe-graph": {
+            "title": "レシピグラフ",
+            "description": "レシピの作成方法を視覚化するのに役立つグラフです。"
+        }
+    },
     "header": {
         "links": {
             "home": "ホーム",
@@ -13,7 +23,8 @@
     "homepage": {
         "hero-text": "Hayday Production Chain Graph ウェブサイトへようこそ！このツールを使うと、人気のファームシミュレーターゲーム「Hayday」でさまざまなアイテムを作るための複雑な生産チェーンを探索できます。経験豊富なプレーヤーでも初心者でも、このグラフを使って基本的な材料が最終製品にどのように変わるのかを理解できるでしょう。",
         "hero-action-wiki": "Hayday ウィキ",
-        "hero-action-source-code": "ソースコード"
+        "hero-action-source-code": "ソースコード",
+        "explore-tool": "ツールを探索する"
     },
     "feature-cards": {
         "try-button": "試してみる！",

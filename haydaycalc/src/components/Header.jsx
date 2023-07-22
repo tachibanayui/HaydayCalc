@@ -36,13 +36,13 @@ function Header() {
                         </LocaleLink>
                         <LocaleLink
                             className="nav-link"
-                            href="/not-implemented"
+                            href="/production-planner"
                         >
                             {t("links.production-planner")}
                         </LocaleLink>
                         <LocaleLink
                             className="nav-link"
-                            href="/not-implemented"
+                            href="/about-us"
                         >
                             {t("links.about-us")}
                         </LocaleLink>

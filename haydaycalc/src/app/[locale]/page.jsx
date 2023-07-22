@@ -49,7 +49,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <h2 className="text-center mt-3">Explore Tools</h2>
+            <h2 className="text-center mt-3">{t("explore-tool")}</h2>
             <Row className="g-3">
                 <Col xs="12" xxl="3" xl="4" sm="6">
                     <RecipeGraphFeatureCard />
@@ -62,7 +62,7 @@ const HomePage = () => {
                 </Col>
             </Row>
         </Container>
-    );
+    )
 };
 
 export default HomePage;

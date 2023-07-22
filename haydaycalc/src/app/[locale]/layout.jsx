@@ -1,5 +1,3 @@
-import { Inter } from "next/font/google"
-import DefaultLayout from "../../components/layouts/DefaultLayout"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { getLocaleWithFallback, locales } from "@/utils/locale"
 import NextJsDefaultLayout from "@/components/layouts/NextJsDefaultLayout"
@@ -7,7 +5,7 @@ import { createTranslator } from "next-intl"
 
 export async function generateMetadata({ params, searchParams }, parent) {
     const { locale } = params
-    const [fallback, lang, messages] = await getLocaleWithFallback(locale)
+    const [fallback, lang, messages] = await getLocaleWithFallback(locale ?? "en")
     const t = createTranslator({ locale: lang, messages })
 
     /** @type {import('next').Metadata}*/

@@ -60,10 +60,7 @@ function Header() {
                             {locales?.map((x) => (
                                 <Link
                                     key={x.code}
-                                    href={pathname?.replace(
-                                        /^\/[^/]+/g,
-                                        `/${x.code}`
-                                    ) ?? `/${x.code}`}
+                                    href={patchLink(pathname, locale, x.code)}
                                     passHref
                                     legacyBehavior
                                 >
@@ -78,6 +75,18 @@ function Header() {
             </Container>
         </Navbar>
     );
+}
+
+function patchLink(current, locale, newLocale) {
+    if (!current) {
+        return `/${newLocale}`;
+    }
+
+    if (current.startsWith(`/${locale}`)) {
+        return current.replace(locale, newLocale);
+    } else {
+        return '/' + newLocale + current;
+    }
 }
 
 export default Header;

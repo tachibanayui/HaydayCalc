@@ -1,3 +1,4 @@
+"use client"
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,7 +8,6 @@ import { useLocale, useTranslations } from "next-intl";
 import LocaleLink from "./LocaleLink";
 import { NavDropdown } from "react-bootstrap";
 import { IoLanguage } from "react-icons/io5";
-import { FaCaretDown } from "react-icons/fa";
 import { usePathname, useRouter } from "next/navigation";
 
 function Header() {
@@ -17,12 +17,7 @@ function Header() {
     return (
         <Navbar expand="lg" className="navbar-dark sticky-top bg-dark">
             <Container style={{ background: "transparent" }}>
-                <LocaleLink
-                    href="/"
-                    passHref
-                    legacyBehavior
-                    style={{ textDecoration: "none" }}
-                >
+                <LocaleLink href="/" passHref legacyBehavior style={{ textDecoration: "none" }}>
                     <Navbar.Brand>HayDay Calc</Navbar.Brand>
                 </LocaleLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,16 +29,10 @@ function Header() {
                         <LocaleLink className="nav-link" href="/recipe-graph">
                             {t("links.recipe-graph")}
                         </LocaleLink>
-                        <LocaleLink
-                            className="nav-link"
-                            href="/production-planner"
-                        >
+                        <LocaleLink className="nav-link" href="/production-planner">
                             {t("links.production-planner")}
                         </LocaleLink>
-                        <LocaleLink
-                            className="nav-link"
-                            href="/about-us"
-                        >
+                        <LocaleLink className="nav-link" href="/about-us">
                             {t("links.about-us")}
                         </LocaleLink>
                     </Nav>
@@ -57,16 +46,14 @@ function Header() {
                             }
                             id="navbarScrollingDropdown"
                         >
-                            {locales?.map((x) => (
+                            {locales?.map(x => (
                                 <Link
                                     key={x.code}
                                     href={patchLink(pathname, locale, x.code)}
                                     passHref
                                     legacyBehavior
                                 >
-                                    <NavDropdown.Item>
-                                        {x.name}
-                                    </NavDropdown.Item>
+                                    <NavDropdown.Item>{x.name}</NavDropdown.Item>
                                 </Link>
                             ))}
                         </NavDropdown>
@@ -74,7 +61,7 @@ function Header() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    );
+    )
 }
 
 function patchLink(current, locale, newLocale) {

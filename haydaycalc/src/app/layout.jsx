@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./globals.css"
 import { getLocaleWithFallback, locales } from "@/utils/locale"
 import { createTranslator } from "next-intl"
 

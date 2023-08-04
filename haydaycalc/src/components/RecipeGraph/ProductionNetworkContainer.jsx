@@ -1,4 +1,3 @@
-"use client"
 import { useCallback, useEffect, useRef, useState } from "react"
 import {
     INITIAL_VALUE,
@@ -11,7 +10,7 @@ import {
 } from "react-svg-pan-zoom"
 
 const ProductionNetworkContainer = ({ children }) => {
-    const Viewer = useRef(null);
+    // const Viewer = useRef(null);
     const [value, setValue] = useState(INITIAL_VALUE)
 
     const [firstRender, setFirstRender] = useState(true)
@@ -28,7 +27,7 @@ const ProductionNetworkContainer = ({ children }) => {
     }
     return (
         <ReactSVGPanZoom
-            ref={Viewer}
+            // ref={Viewer}
             SVGBackground="transparent"
             background="transparent"
             preventPanOutside="true"

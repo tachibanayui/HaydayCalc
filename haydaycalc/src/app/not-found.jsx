@@ -1,11 +1,10 @@
-"use-client"
 import DefaultLayout from "@/components/layouts/DefaultLayout";
-import NextJsDefaultLayout from "@/components/layouts/NextJsDefaultLayout";
 import { Container } from "@/reexports/ReactBootstrap";
 import { getLocaleWithFallback } from "@/utils/locale";
 import { NextIntlClientProvider } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const NotFound = async () => {
     const [fallback, rlocale, translations] = await getLocaleWithFallback("en");
@@ -13,12 +12,12 @@ const NotFound = async () => {
         <html data-bs-theme="dark">
             <NextIntlClientProvider locale={rlocale} messages={translations}>
                 <body style={{}}>
-                    <link
+                    {/* <link
                         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
                         rel="stylesheet"
                         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
                         crossorigin="anonymous"
-                    ></link>
+                    ></link> */}
                     <DefaultLayout>
                         <Container className="my-5">
                             <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">

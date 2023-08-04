@@ -18,12 +18,7 @@ function Header() {
     return (
         <Navbar expand="lg" className="navbar-dark sticky-top bg-dark">
             <Container style={{ background: "transparent" }}>
-                <LocaleLink
-                    href="/"
-                    passHref
-                    legacyBehavior
-                    style={{ textDecoration: "none" }}
-                >
+                <LocaleLink href="/" passHref legacyBehavior style={{ textDecoration: "none" }}>
                     <Navbar.Brand>HayDay Calc</Navbar.Brand>
                 </LocaleLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,17 +30,14 @@ function Header() {
                         <LocaleLink className="nav-link" href="/recipe-graph">
                             {t("links.recipe-graph")}
                         </LocaleLink>
-                        <LocaleLink
-                            className="nav-link"
-                            href="/production-planner"
-                        >
+                        <LocaleLink className="nav-link" href="/production-planner">
                             {t("links.production-planner")}
                         </LocaleLink>
-                        <LocaleLink
-                            className="nav-link"
-                            href="/about-us"
-                        >
+                        <LocaleLink className="nav-link" href="/about-us">
                             {t("links.about-us")}
+                        </LocaleLink>
+                        <LocaleLink className="nav-link" href="/test">
+                            Test
                         </LocaleLink>
                     </Nav>
                     <div className="justify-content-end">
@@ -58,16 +50,14 @@ function Header() {
                             }
                             id="navbarScrollingDropdown"
                         >
-                            {locales?.map((x) => (
+                            {locales?.map(x => (
                                 <Link
                                     key={x.code}
                                     href={patchLink(pathname, locale, x.code)}
                                     passHref
                                     legacyBehavior
                                 >
-                                    <NavDropdown.Item>
-                                        {x.name}
-                                    </NavDropdown.Item>
+                                    <NavDropdown.Item>{x.name}</NavDropdown.Item>
                                 </Link>
                             ))}
                         </NavDropdown>
@@ -75,7 +65,7 @@ function Header() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    );
+    )
 }
 
 function patchLink(current, locale, newLocale) {

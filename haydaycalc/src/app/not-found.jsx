@@ -1,6 +1,4 @@
-"use-client"
 import DefaultLayout from "@/components/layouts/DefaultLayout";
-import NextJsDefaultLayout from "@/components/layouts/NextJsDefaultLayout";
 import { Container } from "@/reexports/ReactBootstrap";
 import { getLocaleWithFallback } from "@/utils/locale";
 import { NextIntlClientProvider } from "next-intl";

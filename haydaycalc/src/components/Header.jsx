@@ -8,7 +8,6 @@ import { useLocale, useTranslations } from "next-intl";
 import LocaleLink from "./LocaleLink";
 import { NavDropdown } from "react-bootstrap";
 import { IoLanguage } from "react-icons/io5";
-import { FaCaretDown } from "react-icons/fa";
 import { usePathname, useRouter } from "next/navigation";
 
 function Header() {
@@ -35,9 +34,6 @@ function Header() {
                         </LocaleLink>
                         <LocaleLink className="nav-link" href="/about-us">
                             {t("links.about-us")}
-                        </LocaleLink>
-                        <LocaleLink className="nav-link" href="/test">
-                            Test
                         </LocaleLink>
                     </Nav>
                     <div className="justify-content-end">

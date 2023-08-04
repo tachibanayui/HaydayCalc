@@ -71,7 +71,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/412b1ac9-bcc8-4174-b73a-d66025f2b246)
+![Product Screen Shot](https://i.imgur.com/8lO3TJH.png)
 Hayday Calculator was created with the following goals in mind:
 - Convenience: Say goodbye to manual calculations! Our tools save you time and effort by automating the planning process, allowing you to focus more on enjoying the game.
 - Accuracy: Our calculator provides accurate results based on the latest game data, ensuring precise calculations for strategic decision-making.
@@ -95,28 +95,18 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/tachibanayui/HaydayCalc.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
@@ -125,8 +115,8 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 ### Screenshots
-![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/412b1ac9-bcc8-4174-b73a-d66025f2b246)
-![Product Screen Shot](https://github.com/tachibanayui/HaydayCalc/assets/33594017/ffe95ca6-c1ab-47cb-a0e3-c1b780e3e40b)
+![Product Screen Shot](https://i.imgur.com/8lO3TJH.png)
+![Product Screen Shot](https://i.imgur.com/FmKJJIO.png)
 
 
 <!-- CONTRIBUTING -->
